@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #025bbc;
+    --borderline: #ECECEC;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Login page style */
+
+.login {
+    display: flex;
+    max-height: 100vh;
+    overflow-y: hidden;
+    align-items: center;
+}
+
+.loginImg {
+    width: 50%;
+    height: 100vh;
+    filter: brightness(50%);
+    margin-right: 50px;
+}
+
+.loginForm {
+    margin-bottom: auto;
+    width: max-content;
+}
+
+.loginForm h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.loginForm h1 span {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary);
+}
+
+.loginForm p {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.autoLogin {
+    display: flex;
+    padding: 1%;
+    margin-top: -8px;
+}
+
+.btnAutoLogin {
+    display: flex;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 0 3px 2px var(--borderline);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btnAutoLogin img {
+    margin-right: 6px;
+}
+
+.login fieldset {
+    border: none;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+.login legend {
+    text-align: center;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login form {
+    margin-top: 10px;
+}
+
+.formInput {
+    display: flex;
+    align-items: center;
+    width: 380px;
+    border-radius: 6px;
+    margin: 10px auto 20px;
+    background-color: var(--borderline);
+    border: 1px solid #c7c7c7;
+    transition: 0.2s;
+}
+
+.formInput img {
+    padding: 8px;
+    width: 26px;
+    height: 22px;
+}
+
+.formInput input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    height: 100%;
+    border-left: 1px solid #c7c7c7;
+}
+
+.formInput input:focus {
+    outline: none;
+}
+
+.formInput:hover {
+    box-shadow: 0 0 6px 2px #025cbc38;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+.btnLogin {
+    text-align: center;
+}
+
+.btnLogin button {
+    background-color: #004288;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    padding: 7px 32px;
+    border: 1px solid var(--borderline);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.btnLogin button:hover, .btnAutoLogin:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 2px 1px rgba(141, 141, 141, 0.61);
+    font-weight: bold;
+}
+
+.signinLink {
+    text-align: center;
+}
+
+.login small a {
+    font-weight: bold;
+}
