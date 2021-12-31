@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary: #025bbc;
+    --primary: #6c924c;
+    --secondary: #81a860;
+    --darker: #335e1c;
     --borderline: #ECECEC;
 }
 
@@ -29,6 +31,10 @@ button:hover {
     cursor: pointer;
 }
 
+input:focus {
+    outline: none;
+}
+
 /* Login page style */
 
 .login {
@@ -41,13 +47,20 @@ button:hover {
 .loginImg {
     width: 50%;
     height: 100vh;
-    filter: brightness(50%);
-    margin-right: 50px;
+    overflow: hidden;
+    filter: brightness(60%);
+}
+
+.loginImg img {
+    width: 100%;
+    height: 100%;
 }
 
 .loginForm {
     margin-bottom: auto;
-    width: max-content;
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .loginForm h1 {
@@ -55,10 +68,9 @@ button:hover {
     text-align: center;
 }
 
-.loginForm h1 span {
+.brand {
     font-weight: bold;
-    font-size: 40px;
-    color: var(--primary);
+    color: var(--darker);
 }
 
 .loginForm p {
@@ -70,6 +82,8 @@ button:hover {
     display: flex;
     padding: 1%;
     margin-top: -8px;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnAutoLogin {
@@ -98,12 +112,12 @@ button:hover {
 .login legend {
     text-align: center;
     font-weight: bold;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .login form {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .formInput {
@@ -131,12 +145,8 @@ button:hover {
     border-left: 1px solid #c7c7c7;
 }
 
-.formInput input:focus {
-    outline: none;
-}
-
 .formInput:hover {
-    box-shadow: 0 0 6px 2px #025cbc38;
+    box-shadow: 0 0 6px 2px #025cbc1e;
     transform: scale(1.01);
     transition: 0.2s;
 }
@@ -146,24 +156,25 @@ button:hover {
 }
 
 .btnLogin button {
-    background-color: #004288;
+    background-color: var(--darker);
     border-radius: 6px;
     font-size: 16px;
     color: white;
     padding: 7px 32px;
-    border: 1px solid var(--borderline);
     margin-top: 10px;
+    border: none;
     margin-bottom: 20px;
     transition: 0.3s;
 }
 
 .btnLogin button:hover, .btnAutoLogin:hover {
     transform: scale(1.08);
-    box-shadow: 0 0 2px 1px rgba(141, 141, 141, 0.61);
+    background-color: var(--primary);
     font-weight: bold;
+    color: white;
 }
 
-.signinLink {
+.loginLink {
     text-align: center;
 }
 

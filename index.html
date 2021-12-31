@@ -4,18 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" href="assets/icon/logo.svg">
     <title>OiKitchen</title>
 </head>
 <body>
     <!-- Nabvar -->
-    <nav>
+    <nav class="flex">
+        <!-- Brand -->
+        <a href="/" class="brand txtwhite flex">
+            <img src="assets/icon/logo-bg.svg" alt="logo" width="50" height="50">
+            OiKitchen
+        </a>
 
+        <!-- Nav items -->
+        <ul class="nav-items flex">
+            <li>
+                <a href="" class="active">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="">Favorites</a>
+            </li>
+            <li>
+                <a href="">Review</a>
+            </li>
+            <li>
+                <a href="">About us</a>
+            </li>
+        </ul>
+        <button class="btnLogout">
+            <a href="login.html" class="txtwhite">Keluar</a>
+        </button>
     </nav>
-    
 
+    <!-- Hero -->
+    <section class="hero flex">
+        <div class="center">
+            <img src="assets/img/pizza-woman.svg" alt="">
+        </div>
+        <div class="container textHero">
+            <h1>
+                Pesan di 
+                <span class="brand">OiKitchen</span>
+                <br>
+                Perut Kenyang, Hati Senang!
+            </h1>
+            <h6>
+                <span class="brand">OiKitchen</span>  menyediakan aneka ragam menu lezat dengan kualitas baik, harga terjangkau, dan waktu pengiriman cepat.
+            </h6>
+            <div class="flex searchBox">
+                <input type="text" placeholder="Pesan menu apa hari ini?">
+                <button type="submit" class="btnSearch">
+                    <img src="assets/icon/search.svg" alt="search">
+                </button>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <a href="https://www.freepik.com/vectors/people">People vector created by stories - www.freepik.com</a>
-    </footer>
+    <!-- Why should OiKitchen? -->
+    <section id="advantages">
+        <div class="flex">
+            <div class="advContent">
+                <h2>Mengapa Pesan di <span class="brand">OiKitchen</span>?</h2>
+                <ul>
+                    <li class="flex listAdv">
+                        <img src="assets/icon/taste.png" alt="taste">
+                        <div class="listAdvItem">
+                            <h4>Rasa Lezat</h4>
+                            <p>Menu <span class="brand">OiKitchen</span> memiliki cita rasa yang lezat, karena dimasak sepenuh hati oleh tangan-tangan ajaib.</p>
+                        </div>
+                    </li>
+                    <li class="flex listAdv">
+                        <img src="assets/icon/quality.png" alt="quality">
+                        <div class="listAdvItem">
+                            <h4>Berkualitas Baik</h4>
+                            <p>Makanan terbuat dari bahan-bahan segar dan diolah dengan proses yang higienis. Pokoknya terjamin bersih, deh!</p>
+                        </div>
+                    </li>
+                    <li class="flex listAdv">
+                        <img src="assets/icon/price.png" alt="price">
+                        <div class="listAdvItem">
+                            <h4>Harga Terjangkau</h4>
+                            <p>Meski terbuat dari bahan berkualitas baik, harga menu <span class="brand">OiKitchen</span> tetap bersahabat. Sering ada <i>discount</i> juga, lho!</p>
+                        </div>
+                    </li>
+                    <li class="flex listAdv">
+                        <img src="assets/icon/time.png" alt="time">
+                        <div class="listAdvItem">
+                            <h4>Waktu Pengiriman Cepat</h4>
+                            <p>Pesanan akan langsung diproses setelah pelanggan menyelesaikan transaksi. Meski begitu, waktu pengiriman tetap bergantung pada jarak lokasi tujuan. Semakin jauh jarak tempuh maka semakin memakan waktu.
+                                <br>
+                                <small>
+                                    <i>** Pelanggan hanya perlu sedikit bersabar :)</i>
+                                </small>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="advImg">
+                <img src="assets/img/index1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to order -->
+    <section id="order">
+        <h2>Cara Pemesanan</h2>
+        <div class="flex order">
+            <div class="orderItem">
+                <img src="assets/img/choose-menu.svg" alt="">
+                <h3>Pilih item dan buat <span>pesanan</span></h3>
+            </div>
+            <div class="orderArrow"></div>
+            <div class="orderItem">
+                <img src="assets/img/order-confirm.svg" alt="">
+                <h3>Konfirmasi <span>pesanan</span></h3>
+            </div>
+            <div class="orderArrow"></div>
+            <div class="orderItem">
+                <img src="assets/img/delivery.svg" alt="">
+                <h3><span>Pesanan</span> segera diantar</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section id="categories">
+        .flex
+    </section>
 </body>
 </html>
