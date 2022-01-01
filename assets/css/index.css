@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary: #6c924c;
-    --secondary: #81a860;
-    --darker: #335e1c;
+    --primary: #2E653E;
+    --secondary: #578A68;
+    --darker: #163E24;
     --borderline: #ECECEC;
 }
 
@@ -94,12 +94,13 @@ nav .brand {
 
 nav ul {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 40px;
+    width: 25%;
+    justify-content: space-between;
 }
 
 nav li {
-    padding: 3px;
-    margin-right: 23px;
+    padding: 3px 0;
 }
 
 nav a, nav button {
@@ -284,7 +285,7 @@ nav li:hover .active {
 }
 
 .order span {
-    color: var(--darker);
+    color: var(--primary);
 }
 
 .orderItem {
@@ -394,7 +395,7 @@ nav li:hover .active {
     font-weight: normal;
 }
 
-.categoriesCard a button {
+.categoriesCard a button, #banner a button {
     margin-top: 20px;
     padding: 10px 22px;
     border-radius: 6px;
@@ -405,12 +406,80 @@ nav li:hover .active {
     width: 40%;
 }
 
-.categoriesCard a:hover button {
+.categoriesCard a:hover button, #banner a:hover button  {
     background-color: var(--primary);
     transform: scale(1.1);
     transition: 0.3s;
     font-weight: bold;
 }
+
+
+/* //////////////////////////////////////// */
+/* Banner */
+/* /////////////////////////////////////// */
+
+#banner {
+    width: 100%;
+    height: max-content;
+    padding: auto;
+    margin: 100px 0;
+    position: relative;
+    z-index: -1;
+    animation-name: banner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner {
+    0% {
+        background-color: #92B396; 
+    }
+    50% {
+        background-color: #578A68;
+        transform: scale(1.01);
+    }
+    100% {
+        background-color: #92B396;
+    }
+}
+
+#banner img {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 9px 6px rgba(83, 81, 81, 0.5);
+}
+
+.bannerLeft {
+    padding: 2%;
+    text-align: center;
+    padding-left: auto;
+    width: 50%
+}
+
+.bannerLeft h2 {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+}
+
+.discount {
+    background-color: rgb(192, 2, 2);
+    color: white;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.bannerRight {
+    width: 500px;
+    background-color: var(--borderline);
+    padding: 30px;
+    border-radius: 5px;
+}
+
 
 
 /* ///////////////////////////////////////////// */
@@ -499,4 +568,5 @@ footer .loc img {
 footer small {
     color:  white;
     margin-left: 5px;
+    font-weight: lighter;
 }

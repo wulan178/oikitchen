@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary: #6c924c;
-    --secondary: #81a860;
-    --darker: #335e1c;
+    --primary: #2E653E;
+    --secondary: #578A68;
+    --darker: #163E24;
     --borderline: #ECECEC;
 }
 
@@ -25,6 +25,10 @@ body {
 body::-webkit-scrollbar {
     width: 5px;
     display: none;
+}
+
+form {
+    height: max-content;
 }
 
 button {
@@ -64,23 +68,202 @@ input {
     margin-right: 30px;
 }
 
+
+/* ////////////////////////////////// */
+/* Navbar */
+/* ///////////////////////////////// */
+
+nav {
+    width: 100vw;
+    background-color: var(--primary);
+    position: fixed;
+    height: 70px;
+    overflow-y: hidden;
+}
+
+nav .brand {
+    font-size: 26px;
+    color: white;
+}
+
+.brand img {
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-right: 3px;
+}
+
+nav ul {
+    margin-left: auto;
+    margin-right: 40px;
+    width: 25%;
+    justify-content: space-between;
+}
+
+nav li {
+    padding: 3px 0;
+}
+
+nav a, nav button {
+    color: white;
+}
+
+.active, nav li:hover {
+    font-weight: bold;
+    border-bottom: 2px solid var(--borderline);
+}
+
+nav li:hover .active {
+    border-bottom: 0 solid transparent;
+}
+
+.btnLogout {
+    border-radius: 20px;
+    font-size: 16px;
+    background: transparent;
+    padding: 7px 32px;
+    border: 1px solid var(--borderline);
+    margin-right: 40px;
+    transition: 0.3s;
+}
+
+.btnLogout:hover, .btnSearch:hover {
+    transform: scale(0.9);
+    background-color: var(--secondary);
+}
+
+
+/* /////////////////////////////////// */
+/* Footer */
+/* ////////////////////////////////// */
+
+footer {
+    background-color: var(--primary);
+    padding: 25px 50px 10px 50px;
+}
+
+footer a, footer p {
+    color: white;
+    font-weight: lighter;
+}
+
+footer .brand {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+footer .brand img {
+    margin-left: 0;
+}
+
+footer .left {
+    margin-right: auto;
+}
+
+footer .left p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+footer .right {
+    gap: 50px;
+    margin-bottom: auto;
+}
+
+footer .right ul  {
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer h4 {
+    margin: 0 0 10px 0;
+}
+
+.contact {
+    height: 40px;
+    overflow-y: hidden;
+    margin-left: 10px;
+}
+
+.contact img {
+    width: 24px;
+    height: 24px;
+}
+
+.socmed {
+    width: auto;
+    margin-bottom: auto;
+}
+
+.socmed img {
+    margin-right: 10px;
+}
+
+footer .loc {
+    margin-left: -50px;
+    margin-right: -50px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .loc img {
+    height: 18px;
+}
+
+footer small {
+    color:  white;
+    margin-left: 5px;
+    font-weight: lighter;
+}
+
+
+/* /////////////////////////////// */
+/* Menu page style */
+/* ////////////////////////////// */
+
+.searchBox {
+    width: 35%;
+    margin: 40px auto 30px auto;
+    border-radius: 25px;
+    padding: 0;
+    border: 2px solid var(--darker);
+}
+
+.searchBox input {
+    padding: 8px;
+    margin-left: 10px;
+    padding-right: 0;
+    width: 85%;
+}
+
+.btnSearch {
+    height: 44px;
+    width: 15%;
+    border-radius: 25px;
+    margin: 2px;
+    background-color: var(--darker);
+}
+
+.btnSearch:hover {
+    transform: scale(0.9);
+    background-color: var(--secondary);
+}
+
 #categories {
     margin: 0 50px 50px 50px;
 }
 
 #categories h3 {
-    font-size: 22px;
-    color: white;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 15px;
+    font-size: 26px;
     width: fit-content;
-    border-radius: 0 25px;
-    background-color: var(--primary);
-    border-bottom: 3px solid var(--darker);
-    border-right: 2px solid var(--darker);
-    margin-bottom: 30px;
+    color: var(--darker);
+    margin: 20px auto;
+    text-align: center;
 }
 
 .menuCard {
@@ -88,6 +271,8 @@ input {
     width: fit-content;
     text-align: center;
     border-radius: 25px;
+    margin-top: 30px;
+    background-color: violet;
 }
 
 .menuCard img {
