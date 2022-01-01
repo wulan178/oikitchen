@@ -12,7 +12,7 @@
     <!-- Nabvar -->
     <nav class="flex">
         <!-- Brand -->
-        <a href="/" class="brand txtwhite flex">
+        <a href="/" class="brand flex">
             <img src="assets/icon/logo-bg.svg" alt="logo" width="50" height="50">
             OiKitchen
         </a>
@@ -20,30 +20,27 @@
         <!-- Nav items -->
         <ul class="nav-items flex">
             <li>
-                <a href="" class="active">Home</a>
+                <a href="#" class="active">Home</a>
             </li>
             <li>
                 <a href="menu.html">Menu</a>
             </li>
             <li>
-                <a href="">Favorites</a>
+                <a href="favorites.html">Favorites</a>
             </li>
             <li>
-                <a href="">Review</a>
-            </li>
-            <li>
-                <a href="">About us</a>
+                <a href="review.html">Review</a>
             </li>
         </ul>
-        <button class="btnLogout">
-            <a href="login.html" class="txtwhite">Keluar</a>
-        </button>
+        <a href="login.html">
+            <button class="btnLogout">Keluar</button>
+        </a>
     </nav>
 
     <!-- Hero -->
     <section class="hero flex">
-        <div class="center">
-            <img src="assets/img/pizza-woman.svg" alt="">
+        <div class="center heroImg">
+            <img src="assets/img/pizza-woman.svg" alt="woman">
         </div>
         <div class="container textHero">
             <h1>
@@ -53,14 +50,14 @@
                 Perut Kenyang, Hati Senang!
             </h1>
             <h6>
-                <span class="brand">OiKitchen</span>  menyediakan aneka ragam menu lezat dengan kualitas baik, harga terjangkau, dan waktu pengiriman cepat.
+                <span class="brand">OiKitchen</span>  menyediakan aneka ragam menu sehat dengan cita rasa lezat, harga bersahabat, serta waktu pengiriman cepat.
             </h6>
-            <div class="flex searchBox">
+            <form action="menu.html" class="flex searchBox">
                 <input type="text" placeholder="Pesan menu apa hari ini?">
                 <button type="submit" class="btnSearch">
                     <img src="assets/icon/search.svg" alt="search">
                 </button>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -74,33 +71,28 @@
                         <img src="assets/icon/taste.png" alt="taste">
                         <div class="listAdvItem">
                             <h4>Rasa Lezat</h4>
-                            <p>Menu <span class="brand">OiKitchen</span> memiliki cita rasa yang lezat, karena dimasak sepenuh hati oleh tangan-tangan ajaib.</p>
+                            <p>Menu <span class="brand">OiKitchen</span> memiliki cita rasa lezat, karena dimasak sepenuh hati oleh tangan-tangan ajaib.</p>
                         </div>
                     </li>
                     <li class="flex listAdv">
                         <img src="assets/icon/quality.png" alt="quality">
                         <div class="listAdvItem">
                             <h4>Berkualitas Baik</h4>
-                            <p>Makanan terbuat dari bahan-bahan segar dan diolah dengan proses yang higienis. Pokoknya terjamin bersih, deh!</p>
+                            <p>Semua menu terbuat dari bahan-bahan segar dan diolah dengan proses yang higienis. Pokoknya dijamin bersih, deh!</p>
                         </div>
                     </li>
                     <li class="flex listAdv">
                         <img src="assets/icon/price.png" alt="price">
                         <div class="listAdvItem">
                             <h4>Harga Terjangkau</h4>
-                            <p>Meski terbuat dari bahan berkualitas baik, harga menu <span class="brand">OiKitchen</span> tetap bersahabat. Sering ada <i>discount</i> juga, lho!</p>
+                            <p>Walaupun terbuat dari bahan berkualitas baik, harga menu <span class="brand">OiKitchen</span> masih tergolong masuk akal. Sering ada <i>discount</i> juga, lho!</p>
                         </div>
                     </li>
                     <li class="flex listAdv">
                         <img src="assets/icon/time.png" alt="time">
                         <div class="listAdvItem">
                             <h4>Waktu Pengiriman Cepat</h4>
-                            <p>Pesanan akan langsung diproses setelah pelanggan menyelesaikan transaksi. Meski begitu, waktu pengiriman tetap bergantung pada jarak lokasi tujuan. Semakin jauh jarak tempuh maka semakin memakan waktu.
-                                <br>
-                                <small>
-                                    <i>** Pelanggan hanya perlu sedikit bersabar :)</i>
-                                </small>
-                            </p>
+                            <p>Pesanan akan langsung diproses setelah pelanggan menyelesaikan transaksi. Meski begitu, waktu pengiriman tetap bergantung pada jarak ke lokasi tujuan. Semakin jauh jarak tempuh maka semakin memakan waktu.</p>
                         </div>
                     </li>
                 </ul>
@@ -134,7 +126,150 @@
 
     <!-- Menu Categories -->
     <section id="categories">
-        .flex
+        <h2>Kategori Menu</h2>
+        <div class="flex">
+            <div class="categoriesCard">
+                <a href="menu.html">
+                    <div class="cover">
+                        <img src="assets/img/fruitsalad.jpg" alt="healthy food">
+                    </div>
+                    <h3>APPETIZER</h3>
+                    <h5>Hidangan Pembuka</h5>
+                    <a href="menu.html">
+                        <button>LIHAT SEMUA MENU</button>
+                    </a>
+                </a>
+            </div>
+            <div class="categoriesCard">
+                <a href="menu.html">
+                    <div class="cover">
+                        <img src="assets/img/friedrice.jpg" alt="pizza">
+                    </div>
+                    <h3>MAIN COURSE</h3>
+                    <h5>Hidangan Utama</h5>
+                    <a href="menu.html">
+                        <button>LIHAT SEMUA MENU</button>
+                    </a>
+                </a>
+            </div>
+            <div class="categoriesCard">
+                <a href="menu.html">
+                    <div class="cover">
+                        <img src="assets/img/dessert1.jpg" alt="dessert">
+                    </div>
+                    <h3>DESSERT</h3>
+                    <h5>Hidangan Penutup</h5>
+                    <a href="menu.html">
+                        <button>LIHAT SEMUA MENU</button>
+                    </a>
+                </a>
+            </div>
+        </div>
     </section>
+
+    <!-- Menu populer -->
+    <section id="popularMenu">
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="flex">
+            <div class="left">
+                <a href="/" class="brand flex">
+                    <img src="assets/icon/logo-bg.svg" alt="logo" width="50" height="50">
+                    OiKitchen
+                </a>
+                <div class="flex contact">
+                    <img src="assets/icon/footemail.png" alt="email">
+                    <p>oi.kitchen@gmail.com</p>
+                </div>
+                <div class="flex contact">
+                    <img src="assets/icon/footphone.png" alt="phone">
+                    <p>021 234 567 891</p>
+                </div>
+                <div class="flex contact">
+                    <img src="assets/icon/wa.png" alt="wa">
+                    <p>085 759 823 353</p>
+                </div>
+            </div>
+            <div class="right flex">
+                <ul>
+                    <li>
+                        <a href="#"><h4>Home</h4></a>
+                    </li>
+                    <li>
+                        <a href="#advantages">Advantages</a>
+                    </li>
+                    <li>
+                        <a href="#order">How to order</a>
+                    </li>
+                    <li>
+                        <a href="#categories">Menu categories</a>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li>
+                        <a href="menu.html"><h4>Menu</h4></a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Appetizer</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Main course</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Dessert</a>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li>
+                        <a href="favorites.html"><h4>Favorites</h4></a>
+                    </li>
+                    <li>
+                        <a href="#categories">Popular menus</a>
+                    </li>
+                    <li>
+                        <a href="favorites.html">My favorites</a>
+                    </li>
+                </ul>
+    
+                <ul>
+                    <li>
+                        <a href="review.html"><h4>Review</h4></a>
+                    </li>
+                    <li>
+                        <a href="review.html">Customers</a>
+                    </li>
+                </ul>
+                
+                <br>
+    
+                <div class="socmed flex">
+                    <div class="flex">
+                        <a href="">
+                            <img src="assets/icon/footfb.png" alt="fb">  
+                        </a>
+                    </div>
+                    <div class="flex">
+                        <a href="">
+                            <img src="assets/icon/ig.png" alt="ig">          
+                        </a>      
+                    </div>
+                    <div class="flex">
+                        <a href="">
+                            <img src="assets/icon/twt.png" alt="twt">                
+                        </a>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <div class="flex loc">
+            <img src="assets/icon/loc.png" alt="location">
+            <small>Jalan Pegangsaan Timur Nomor 56 Jakarta</small>
+        </div>
+    </footer>
 </body>
 </html>

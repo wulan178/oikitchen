@@ -40,6 +40,10 @@ input:focus {
     outline: none;
 }
 
+form {
+    height: max-content;
+}
+
 input {
     border: none;
 }
@@ -98,7 +102,7 @@ nav li {
     margin-right: 23px;
 }
 
-nav a {
+nav a, nav button {
     color: white;
 }
 
@@ -137,9 +141,14 @@ nav li:hover .active {
     margin-bottom: 100px;
 }
 
+.heroImg img {
+    margin-left: 100px;
+}
+
 .textHero {
-    width: 50%;
+    width: 45%;
     margin-top: 30px;
+    margin-left: 100px;
 }
 
 .textHero h1 span {
@@ -149,7 +158,7 @@ nav li:hover .active {
 .textHero h1 {
     font-size: 45px;
     line-height: 55px;
-    width: 70%;
+    width: 73%;
     overflow-y: hidden;
     margin-bottom: -15px;
 }
@@ -158,11 +167,11 @@ nav li:hover .active {
     font-size: 18px;
     line-height: 30px;
     font-weight: normal;
-    width: 70%;
+    width: 73%;
 }
 
 .searchBox {
-    width: 55%;
+    width: 60%;
     border-radius: 25px;
     padding: 0;
     border: 2px solid var(--darker);
@@ -221,28 +230,35 @@ nav li:hover .active {
 .advImg img {
     width: 90%;
     height: 100%;
-    max-height: 118vh;
+    max-height: 115vh;
     border-radius: 30px;
     margin-left: 40px;
 }
 
 .listAdv {
-    width: 86%;
+    width: 90%;
     height: max-content;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
 }
 
 .listAdv img {
-    margin-right: 25px;
+    margin-right: 30px;
     width: 100%;
     max-width: 90px;
-    margin-top: auto;
+    margin-top: 10px;
     margin-bottom: auto;
+    background-color: rgba(243, 243, 243, 0.932);
+    padding: 10px;
+    border-radius: 24px 0 24px 24px;
 }
 
 .listAdvItem h4 {
     border-bottom: 2px solid var(--darker);
     width: fit-content;
-    padding-right: 20px
+    padding-right: 20px;
+    margin-top: 0;
 }
 
 /* ////////////////////////////////////////// */
@@ -257,7 +273,7 @@ nav li:hover .active {
 #order h2 {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .order {
@@ -273,15 +289,13 @@ nav li:hover .active {
 
 .orderItem {
     text-align: center;
+    padding: 10px;
 }
 
 .orderItem img {
     height: 220px;
     width: 220px;
-    background-color: var(--borderline);
-    padding: 20px;
-    border: 3px dashed var(--primary);
-    border-radius: 10px;
+    /* background-color: var(--borderline); */
 }
 
 .orderArrow {
@@ -290,6 +304,36 @@ nav li:hover .active {
     margin: auto;
     background-color: var(--primary);
     clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    position: relative;
+    z-index: -1;
+    animation-name: arrow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.5);
+        background-color: var(--darker);
+    }
+
+    50% {
+        transform: scale(1);
+        background-color: var(--primary);
+    }
+
+    75% {
+        transform: scale(1.5);
+        background-color: var(--darker);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
@@ -307,16 +351,152 @@ nav li:hover .active {
     margin-bottom: 30px;
 }
 
-#categories h3 {
-    font-size: 22px;
-    color: white;
-    margin-bottom: 10px;
-    padding: 4px 15px;
-    width: fit-content;
-    border-radius: 0 25px;
-    background-color: var(--primary);
-    border-bottom: 3px solid var(--darker);
-    border-right: 2px solid var(--darker);
-    margin-bottom: 30px;
+#categories .flex {
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
+.categoriesCard {
+    width: 450px;
+    height: 350px;
+    border-radius: 0 36px 0 36px;
+    transition: 0.3s;
+    background-color: var(--borderline);
+    margin: 10px;
+    overflow-y: hidden;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+.categoriesCard .cover {
+    height: 56%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary);
+    margin-top: 4px;
+    overflow-y: hidden;
+    justify-content: space-around;
+}
+
+.categoriesCard .cover img {
+    width: 200px;
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+    border: 2px solid var(--primary);
+}
+
+.categoriesCard h3, .categoriesCard h5 {
+    margin: 5px;
+    color: var(--darker);
+}
+
+.categoriesCard h5 {
+    font-weight: normal;
+}
+
+.categoriesCard a button {
+    margin-top: 20px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    margin-bottom: 0;
+    background-color: var(--darker);
+    color: white;
+    transition: 0.3s;
+    width: 40%;
+}
+
+.categoriesCard a:hover button {
+    background-color: var(--primary);
+    transform: scale(1.1);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+
+/* ///////////////////////////////////////////// */
+/* Footer */
+/* //////////////////////////////////////////// */
+
+footer {
+    background-color: var(--primary);
+    padding: 25px 50px 10px 50px;
+}
+
+footer a, footer p {
+    color: white;
+    font-weight: lighter;
+}
+
+footer .brand {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+footer .brand img {
+    margin-left: 0;
+}
+
+footer .left {
+    margin-right: auto;
+}
+
+footer .left p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+footer .right {
+    gap: 50px;
+    margin-bottom: auto;
+}
+
+footer .right ul  {
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer h4 {
+    margin: 0 0 10px 0;
+}
+
+.contact {
+    height: 40px;
+    overflow-y: hidden;
+    margin-left: 10px;
+}
+
+.contact img {
+    width: 24px;
+    height: 24px;
+}
+
+.socmed {
+    width: auto;
+    margin-bottom: auto;
+}
+
+.socmed img {
+    margin-right: 10px;
+}
+
+footer .loc {
+    margin-left: -50px;
+    margin-right: -50px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .loc img {
+    height: 18px;
+}
+
+footer small {
+    color:  white;
+    margin-left: 5px;
+}
