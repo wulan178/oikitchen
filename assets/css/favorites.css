@@ -27,10 +27,6 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-form {
-    height: max-content;
-}
-
 button {
     border: none;
     background: none;
@@ -42,6 +38,10 @@ button:hover {
 
 input:focus {
     outline: none;
+}
+
+form {
+    height: max-content;
 }
 
 input {
@@ -69,9 +69,9 @@ input {
 }
 
 
-/* ////////////////////////////////// */
+/* /////////////////////////////////////////// */
 /* Navbar */
-/* ///////////////////////////////// */
+/* ////////////////////////////////////////// */
 
 nav {
     width: 100vw;
@@ -132,10 +132,9 @@ nav li:hover .active {
     background-color: var(--secondary);
 }
 
-
-/* /////////////////////////////////// */
+/* ///////////////////////////////////////////// */
 /* Footer */
-/* ////////////////////////////////// */
+/* //////////////////////////////////////////// */
 
 footer {
     background-color: var(--primary);
@@ -223,44 +222,20 @@ footer small {
 }
 
 
+/* //////////////////////////////// */
+/* Favorites page style */
 /* /////////////////////////////// */
-/* Menu page style */
-/* ////////////////////////////// */
 
-.searchBox {
-    width: 30%;
-    margin: 100px auto 30px auto;
-    border-radius: 25px;
-    padding: 0;
-    border: 2px solid var(--darker);
+#popularMenus {
+    margin-top: 85px;
+    margin-bottom: 80px;
 }
 
-.searchBox input {
-    padding: 8px;
-    margin-left: 10px;
-    padding-right: 0;
-    width: 85%;
-}
-
-.btnSearch {
-    height: 44px;
-    width: 15%;
-    border-radius: 25px;
-    margin: 2px;
-    background-color: var(--darker);
-}
-
-.btnSearch:hover {
-    transform: scale(0.9);
-    background-color: var(--secondary);
-}
-
-.menu {
-    margin: 0 50px 50px 50px;
+#favMenus {
     margin-bottom: 100px;
 }
 
-.menu h2 {
+#popularMenus h2, #favMenus h2 {
     font-size: 28px;
     width: fit-content;
     color: var(--darker);
@@ -327,36 +302,4 @@ footer small {
 
 .menuDesc .add {
     margin-right: 10px;
-}
-
-#mainCourse .menuImgColor {
-    width: 100%;
-    height: 60%;
-    top: 20%;
-    border-radius: 0;
-    position: absolute;
-    z-index: -1;
-    background-color: var(--secondary);
-}
-
-#dessert .menuImgColor {
-    width: 50%;
-    height: 100%;
-    border-radius: 20px 0 0 20px;
-    position: absolute;
-    left: 50%;
-    z-index: -1;
-    background-color: var(--secondary);
-}
-
-.discount {
-    background-color: rgb(192, 2, 2);
-    color: white;
-    font-size: 18px;
-    padding: 6px 12px;
-    border-radius: 3px;
-    position: absolute; 
-    top: 40%; 
-    right: 0; 
-    z-index: 2;
 }

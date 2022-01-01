@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/favorites.css">
+    <link rel="icon" href="assets/icon/logo.svg">
+    <title>OiKitchen</title>
+</head>
+<body>
+    <!-- Nabvar -->
+    <nav class="flex">
+        <!-- Brand -->
+        <a href="/" class="brand flex">
+            <img src="assets/icon/logo-bg.svg" alt="logo" width="50" height="50">
+            OiKitchen
+        </a>
+
+        <!-- Nav items -->
+        <ul class="nav-items flex">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="" class="active">Favorites</a>
+            </li>
+            <li>
+                <a href="review.html">Review</a>
+            </li>
+        </ul>
+        <a href="login.html">
+            <button class="btnLogout">Keluar</button>
+        </a>
+    </nav>
+
+    <!-- Popular menus -->
+    <section id="popularMenus">
+        <h2>Menu Populer</h2>
+        <div class="menuContainer flex">
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/friedrice.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Nasi Goreng</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/fav.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/spaghetti.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Spaghetti</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/unstar.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 8.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/unlove.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/pizza.jpg" alt="">
+                    <small class="discount">
+                        Diskon 50%
+                    </small>
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Pizza</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/unstar.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/unlove.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/burger.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Burger</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/unstar.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/unlove.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/sateayam.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Sate Ayam</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/unstar.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/unlove.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My favorites -->
+    <section id="favMenus">
+        <h2>Menu Populer</h2>
+        <div class="menuContainer flex">
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/friedrice.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Nasi Goreng</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/fav.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/spaghetti.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Spaghetti</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/unstar.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 8.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/unlove.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/pizza.jpg" alt="">
+                    <small class="discount">
+                        Diskon 50%
+                    </small>
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Pizza</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/unstar.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/unlove.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/burger.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Burger</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/unstar.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/unlove.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/sateayam.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Sate Ayam</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/star.svg" alt="">
+                        <img src="assets/icon/unstar.svg" alt="">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="">
+                            </a>
+                            <a href="order.html">
+                                <img src="assets/icon/unlove.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="flex">
+            <div class="left">
+                <a href="/" class="brand flex">
+                    <img src="assets/icon/logo-bg.svg" alt="logo" width="50" height="50">
+                    OiKitchen
+                </a>
+                <div class="flex contact">
+                    <img src="assets/icon/footemail.png" alt="email">
+                    <p>oi.kitchen@gmail.com</p>
+                </div>
+                <div class="flex contact">
+                    <img src="assets/icon/footphone.png" alt="phone">
+                    <p>021 234 567 891</p>
+                </div>
+                <div class="flex contact">
+                    <img src="assets/icon/wa.png" alt="wa">
+                    <p>0857 5982 3253</p>
+                </div>
+            </div>
+            <div class="right flex">
+                <ul>
+                    <li>
+                        <a href="index.html"><h4>Home</h4></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Advantages</a>
+                    </li>
+                    <li>
+                        <a href="index.html">How to order</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Menu categories</a>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li>
+                        <a href="menu.html"><h4>Menu</h4></a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Appetizer</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Main course</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Dessert</a>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li>
+                        <a href="#"><h4>Favorites</h4></a>
+                    </li>
+                    <li>
+                        <a href="#popularMenus">Popular menus</a>
+                    </li>
+                    <li>
+                        <a href="#myFavorites">My favorites</a>
+                    </li>
+                </ul>
+    
+                <ul>
+                    <li>
+                        <a href="review.html"><h4>Review</h4></a>
+                    </li>
+                    <li>
+                        <a href="review.html">Customers</a>
+                    </li>
+                </ul>
+                
+                <br>
+    
+                <div class="socmed flex">
+                    <div class="flex">
+                        <a href="">
+                            <img src="assets/icon/footfb.png" alt="fb">  
+                        </a>
+                    </div>
+                    <div class="flex">
+                        <a href="">
+                            <img src="assets/icon/ig.png" alt="ig">          
+                        </a>      
+                    </div>
+                    <div class="flex">
+                        <a href="">
+                            <img src="assets/icon/twt.png" alt="twt">                
+                        </a>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <div class="flex loc">
+            <img src="assets/icon/loc.png" alt="location">
+            <small>Jalan Pegangsaan Timur Nomor 56 Jakarta</small>
+        </div>
+    </footer>
+</body>
+</html>
