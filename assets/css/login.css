@@ -157,10 +157,11 @@ input:focus {
 
 .btnLogin button {
     background-color: var(--darker);
-    border-radius: 6px;
+    border-radius: 5px;
     font-size: 16px;
     color: white;
-    padding: 7px 32px;
+    padding: 10px 20px;
+    width: 25%;
     margin-top: 10px;
     border: none;
     margin-bottom: 20px;

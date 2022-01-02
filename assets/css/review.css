@@ -36,12 +36,8 @@ button:hover {
     cursor: pointer;
 }
 
-input:focus {
+textarea:focus {
     outline: none;
-}
-
-form {
-    height: max-content;
 }
 
 input {
@@ -139,7 +135,7 @@ nav li:hover .active {
 
 footer {
     background-color: var(--primary);
-    padding: 25px 50px 10px 50px;
+    padding: 20px 50px 10px 50px;
 }
 
 footer a, footer p {
@@ -149,8 +145,9 @@ footer a, footer p {
 
 footer .brand {
     color: white;
+    margin-top: 0;
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 footer .brand img {
@@ -182,7 +179,7 @@ footer li {
 }
 
 footer h4 {
-    margin: 0 0 10px 0;
+    margin: 15px 0;
 }
 
 .contact {
@@ -199,6 +196,7 @@ footer h4 {
 .socmed {
     width: auto;
     margin-bottom: auto;
+    margin-top: 15px;
 }
 
 .socmed img {
@@ -222,6 +220,7 @@ footer small {
     font-weight: lighter;
 }
 
+
 /* /////////////////////////// */
 /* Review page style */
 /* /////////////////////////// */
@@ -239,9 +238,14 @@ footer small {
     text-align: center;
 }
 
+.menuContainer {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 .menuCard {
     border: 1px solid var(--borderline);
-    box-shadow: 2px 3px 4px rgba(128, 128, 128, 0.212);
+    box-shadow: 0 0 4px 2px var(--borderline);
     width: 300px;
     height: 380px;
     text-align: center;
@@ -261,7 +265,7 @@ footer small {
     border-radius: 0 20px 20px 0;
     position: absolute;
     z-index: -1;
-    background-color: var(--secondary);
+    background-color: var(--primary);
 }
 
 .menuImg img {
@@ -280,7 +284,7 @@ footer small {
     height: 30px;
 }
 
-.menuDesc .rate img, .review .rate img {
+.menuDesc .rate img {
     width: 15px;
     height: 15px;
     margin: 2px 2px 5px 0;
@@ -293,6 +297,32 @@ footer small {
 
 .menuDesc .add {
     margin-right: 10px;
+}
+
+#mainCourse .menuImgColor {
+    width: 100%;
+    height: 60%;
+    top: 20%;
+    border-radius: 0;
+}
+
+#dessert .menuImgColor {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    left: 50%;
+}
+
+.discount {
+    background-color: rgb(192, 2, 2);
+    color: white;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    position: absolute; 
+    top: 40%; 
+    right: 0; 
+    z-index: 1;
 }
 
 .reviewCard {
@@ -316,7 +346,7 @@ footer small {
     flex-wrap: wrap;
 }
 
-.review img {
+.review .ava {
     border-radius: 50%;
     width: 75px;
     height: 75px;
@@ -346,6 +376,10 @@ footer small {
     overflow-y: hidden;
 }
 
+.feedback form {
+    margin-left: auto;
+}
+
 .feedback img {
     margin-left: auto;
     width: 50%;
@@ -355,13 +389,12 @@ footer small {
     width: 50%;
     padding: 10px 20px;
     background-color: var(--darker);
-    top: -70px;
     border-radius: 5px;
     color: white;
     position: relative;
     left: 25%;
     transition: 0.3s;
-    margin: 10px;
+    margin-top: 20px;
 }
 
 .feedback button:hover {
@@ -369,19 +402,14 @@ footer small {
     background-color: var(--secondary);
 }
 
-.feedback form {
-    margin-top: -20px;
-}
-
-.formFeedback input {
-    padding: 10px 20px;
-    border: 1px solid var(--primary);
+.feedback textarea {
+    padding: 20px;
+    border: 2px solid var(--primary);
     text-align: left;
-    box-shadow: 2px 2px 4px 1px rgba(128, 128, 128, 0.39);
     border-radius: 10px;
     height: 250px;
-    width: 450px;
-    margin: 10px;
+    resize: none;
+    width: 450px; 
 }
 
 .review fieldset {

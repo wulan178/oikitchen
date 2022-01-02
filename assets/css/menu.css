@@ -139,7 +139,7 @@ nav li:hover .active {
 
 footer {
     background-color: var(--primary);
-    padding: 25px 50px 10px 50px;
+    padding: 20px 50px 10px 50px;
 }
 
 footer a, footer p {
@@ -149,8 +149,9 @@ footer a, footer p {
 
 footer .brand {
     color: white;
+    margin-top: 0;
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 footer .brand img {
@@ -182,7 +183,7 @@ footer li {
 }
 
 footer h4 {
-    margin: 0 0 10px 0;
+    margin: 15px 0;
 }
 
 .contact {
@@ -199,6 +200,7 @@ footer h4 {
 .socmed {
     width: auto;
     margin-bottom: auto;
+    margin-top: 15px;
 }
 
 .socmed img {
@@ -275,7 +277,7 @@ footer small {
 
 .menuCard {
     border: 1px solid var(--borderline);
-    box-shadow: 2px 3px 4px rgba(128, 128, 128, 0.212);
+    box-shadow: 0 0 4px 2px var(--borderline);
     width: 300px;
     height: 380px;
     text-align: center;
@@ -295,7 +297,7 @@ footer small {
     border-radius: 0 20px 20px 0;
     position: absolute;
     z-index: -1;
-    background-color: var(--secondary);
+    background-color: var(--primary);
 }
 
 .menuImg img {
@@ -334,19 +336,13 @@ footer small {
     height: 60%;
     top: 20%;
     border-radius: 0;
-    position: absolute;
-    z-index: -1;
-    background-color: var(--secondary);
 }
 
 #dessert .menuImgColor {
     width: 50%;
     height: 100%;
     border-radius: 20px 0 0 20px;
-    position: absolute;
     left: 50%;
-    z-index: -1;
-    background-color: var(--secondary);
 }
 
 .discount {
@@ -358,5 +354,5 @@ footer small {
     position: absolute; 
     top: 40%; 
     right: 0; 
-    z-index: 2;
+    z-index: 1;
 }

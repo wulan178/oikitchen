@@ -90,7 +90,7 @@ nav .brand {
 .brand img {
     border-radius: 50%;
     margin-left: 25px;
-    margin-right: 3px;
+    margin-right: 5px;
 }
 
 nav ul {
@@ -192,6 +192,26 @@ nav li:hover .active {
     border-radius: 25px;
     margin: 2px;
     background-color: var(--darker);
+}
+
+.decore img {
+    position: absolute; 
+    z-index: -1;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
 }
 
 
@@ -492,7 +512,7 @@ nav li:hover .active {
 
 footer {
     background-color: var(--primary);
-    padding: 25px 50px 10px 50px;
+    padding: 20px 50px 10px 50px;
 }
 
 footer a, footer p {
@@ -502,8 +522,9 @@ footer a, footer p {
 
 footer .brand {
     color: white;
+    margin-top: 0;
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 footer .brand img {
@@ -535,7 +556,7 @@ footer li {
 }
 
 footer h4 {
-    margin: 0 0 10px 0;
+    margin: 15px 0;
 }
 
 .contact {
@@ -552,6 +573,7 @@ footer h4 {
 .socmed {
     width: auto;
     margin-bottom: auto;
+    margin-top: 15px;
 }
 
 .socmed img {

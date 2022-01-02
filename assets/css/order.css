@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #2E653E;
+    --secondary: #578A68;
+    --darker: #163E24;
+    --borderline: #ECECEC;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+form {
+    height: max-content;
+}
+
+input {
+    border: none;
+}
+
+.brand {
+    font-weight: bold;
+    color: var(--darker);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+/* ///////////////////////////////// */
+/* Order page style */
+/* //////////////////////////////// */
+
+fieldset {
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    margin: 20px 0;
+}
+
+legend {
+    text-align: center;
+    padding: 10px;
+}
+
+fieldset h1 {
+    font-size: 28px;
+    color: var(--darker);
+    margin: 0;
+}
+
+fieldset h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 8px 24px;
+    background-color: var(--secondary);
+    border-radius: 3px;
+    color: white;
+}
+
+.menuContainer {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+.menuCard {
+    border: 1px solid var(--secondary);
+    box-shadow: 2px 3px 4px rgba(128, 128, 128, 0.212);
+    width: 300px;
+    height: 380px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.menuImg {
+    position: relative;
+}
+
+.menuImgColor {
+    width: 50%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--secondary);
+}
+
+.menuImg img {
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.menuDesc {
+    padding: 10px;
+}
+
+.menuDesc img {
+    width: 30px;
+    height: 30px;
+}
+
+.menuDesc .rate img {
+    width: 15px;
+    height: 15px;
+    margin: 2px 2px 5px 0;
+}
+
+.menuDesc #price {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.menuDesc .add {
+    margin-right: 10px;
+}
