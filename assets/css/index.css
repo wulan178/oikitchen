@@ -143,12 +143,16 @@ nav li:hover .active {
     margin-bottom: 100px;
 }
 
+.heroImg {
+    width: 50%;
+}
+
 .heroImg img {
     margin-left: 100px;
 }
 
 .textHero {
-    width: 45%;
+    width: 50%;
     margin-top: 30px;
     margin-left: 100px;
 }
@@ -160,7 +164,7 @@ nav li:hover .active {
 .textHero h1 {
     font-size: 45px;
     line-height: 55px;
-    width: 73%;
+    width: auto;
     overflow-y: hidden;
     margin-bottom: -15px;
 }
