@@ -231,10 +231,16 @@ footer small {
 #popularMenus {
     margin-top: 85px;
     margin-bottom: 80px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #favMenus {
     margin-bottom: 100px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #popularMenus h2, #favMenus h2 {
