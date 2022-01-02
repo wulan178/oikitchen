@@ -158,31 +158,88 @@
                 </div>
             </div>
         </section>
+        <center>
+            <h6>TOTAL HARGA</h6>
+            <h5><b>Rp 50.000,-</b></h5>
+        </center>
 
         <!-- Address -->
-        <h2>Data Pelanggan</h2>
-        <section>
-            <form action="" class="costumerData">
+        <h2>Detail Pesanan</h2>
+        <section id="costumerData">
+            <form action="">
+                <!-- Nama -->
                 <div class="flex">
                     <p>Nama</p>
                     <span>:</span>
-                    <input type="text" name="name" id="name" placeholder="Nama">
-                </div>
-                <div class="flex">
-                    <p>Alamat</p>
-                    <span>:</span>
+                    <input type="text" name="name" id="name">
                 </div>
                 
+                <!-- No. HP -->
+                <div class="flex">
+                    <p>No. Handphone</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name">
+                </div>
+                
+                <!-- Alamat -->
+                <p>Alamat</p>
                 <div class="flex">
                     <p>Blok/Jalan</p>
                     <span>:</span>
-                    <input type="text" name="name" id="name" placeholder="Nama">
+                    <input type="text" name="name" id="name">
                 </div>
                 <div class="flex">
-                    <p>Nama</p>
+                    <p>RT</p>
                     <span>:</span>
-                    <input type="text" name="name" id="name" placeholder="Nama">
+                    <input type="text" name="name" id="name" >
                 </div>
+                <div class="flex">
+                    <p>RW</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="flex">
+                    <p>Kelurahan</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="flex">
+                    <p>Kecamatan</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="flex">
+                    <p>Kota</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="flex">
+                    <p>Metode Pembayaran</p>
+                    <span>:</span>
+                    <div class="flex">
+                        <input type="radio" name="payment" id="dana">
+                            <label for="dana">DANA</label>
+                        <input type="radio" name="payment" id="ovo">
+                            <label for="ovo">OVO</label>
+                        <input type="radio" name="payment" id="shopeepay">
+                            <label for="">ShopeePay</label>
+                        <input type="radio" name="payment" id="shopeepay">
+                            <label for="">GOPAY</label>
+                        <input type="radio" name="payment" id="shopeepay">
+                            <label for="">Transfer Bank</label>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p>Catatan</p>
+                    <span>:</span>
+                    <div class="flex">
+                        <textarea></textarea>
+                    </div>
+                </div>
+
+                <center>
+                    <button type="submit" class="btnOrder">BUAT PESANAN</button>
+                </center>
             </form>
         </section>
 
