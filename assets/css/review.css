@@ -127,7 +127,7 @@ nav li:hover .active {
     transition: 0.3s;
 }
 
-.btnLogout:hover, .btnSearch:hover {
+.btnLogout:hover {
     transform: scale(0.9);
     background-color: var(--secondary);
 }
@@ -227,7 +227,7 @@ footer small {
 /* /////////////////////////// */
 
 #review, #feedback {
-    margin-top: 90px;
+    margin-top: 85px;
     margin-bottom: 100px;
 }
 
@@ -295,12 +295,25 @@ footer small {
     margin-right: 10px;
 }
 
-.review {
+.reviewCard {
+    width: 30%;
+    margin-bottom: auto;
+}
+
+.reviewItems {
     border-left: 2px solid var(--darker);
-    margin-left: 30px;
+    width: 70%;
+}
+
+.review {
+    margin: 20px;
     padding: 10px 20px;
     padding-bottom: auto;
-    height: 380px;
+    flex-wrap: wrap;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
 }
 
 .review img {
@@ -342,14 +355,39 @@ footer small {
     width: 50%;
     padding: 10px 20px;
     background-color: var(--darker);
-    top: -100px;
+    top: -70px;
+    border-radius: 5px;
     color: white;
     position: relative;
+    left: 25%;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.feedback button:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary);
+}
+
+.feedback form {
+    margin-top: -20px;
 }
 
 .formFeedback input {
     padding: 10px 20px;
-    border: 1px solid black;
+    border: 1px solid var(--primary);
+    text-align: left;
+    box-shadow: 2px 2px 4px 1px rgba(128, 128, 128, 0.39);
+    border-radius: 10px;
     height: 250px;
-    width: 500px;
+    width: 450px;
+    margin: 10px;
+}
+
+.review fieldset {
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+    width: 700px;
+    height: fit-content;
+    margin-top: 20px;
 }
