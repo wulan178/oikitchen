@@ -394,11 +394,12 @@ footer small {
     position: relative;
     left: 25%;
     transition: 0.3s;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 .feedback button:hover {
-    transform: scale(1.05);
+    transform: scale(0.9);
     background-color: var(--secondary);
 }
 
@@ -407,7 +408,7 @@ footer small {
     border: 2px solid var(--primary);
     text-align: left;
     border-radius: 10px;
-    height: 250px;
+    height: 210px;
     resize: none;
     width: 450px; 
 }
