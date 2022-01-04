@@ -420,3 +420,262 @@ footer small {
     height: fit-content;
     margin-top: 20px;
 }
+
+
+
+
+
+/* //////////////////////////////////// */
+/* RESPONSIVE */
+/* /////////////////////////////////// */
+
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+    
+    nav {
+        width: 100vw;
+        height: 50px;
+    }
+    
+    nav .brand {
+        display: none;
+    }
+    
+    nav ul {
+        margin-left: 12px;
+        font-size: 12px;
+        padding-left: 0;
+        margin-right: auto;
+        width: max-content;
+    }
+
+    nav ul li {
+        margin-right: 12px;
+    }
+    
+    .btnLogout {
+        font-size: 12px;
+        padding: 5px 12px;
+        margin-right: 12px;
+    }
+
+    #feedback {
+        margin: 50px 0;
+        margin-bottom: 0;
+    }
+
+    #review {
+        margin: 10px auto;
+    }
+    
+    #review h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    #feedback h3 {
+        font-size: 18px; 
+    }
+    
+    .menuCard {
+        width: 90px;
+        border-radius: 10px;
+        height: max-content;
+        margin: 10px;
+    }
+    
+    .menuImgColor {
+        width: 55%;
+        height: 100%;
+    }
+    
+    .menuImg img {
+        width: 45px;
+        height: 100%;
+    }
+    
+    .menuDesc h3 {
+        font-size: 12px;
+    }
+
+    .menuDesc img {
+        display: none;
+    }
+    
+    .menuDesc .rate img {
+        width: 8px;
+        height: 8px;
+        margin: 0;
+        display: inline;
+    }
+    
+    .menuDesc #price {
+        display: none;  
+    }
+    
+    #dessert .menuImgColor {
+        width: 55%;
+    }
+    
+    .discount {
+        font-size: 16px;
+     }
+    
+    .reviewCard {
+        width: max-content;
+        margin-right: auto;
+    }
+    
+    .reviewItems {
+        padding-right: auto;
+        width: 70%;
+    }
+
+    .review {
+        margin: 0;
+    }
+
+    .review fieldset {
+        width: 85%;
+    }
+
+    .review legend {
+        font-size: 12px;
+    }
+    
+    .review .ava {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .review h6 {
+        font-size: 16px;
+    }
+
+    .review p {
+        font-size: 12px;
+    }
+    
+    .customerReview {
+        flex-direction: column;
+        margin-top: auto;
+    }
+
+    .customerReview h6 {
+        font-size: 12px;
+    }
+
+    .customerReview .rate img {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .feedback {
+        height: max-content;
+        margin: 20px;
+        width: 90%;
+    }
+    
+    .feedback form {
+        margin-left: 0;
+    }
+    
+    .feedback img {
+        display: none;
+    }
+    
+    .feedback button {
+        width: 40%;
+        left: 0;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .feedback textarea {
+        height: 100px;
+        width: 210px; 
+    }
+
+    footer {
+        padding: 15px 20px;
+    }
+
+    footer .flex {
+        flex-wrap: wrap;
+    }
+    
+    footer .brand {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    
+    footer .brand img {
+        display: none;
+    }
+
+    footer .left p {
+        font-size: 12px;
+    }
+
+    footer .left img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    footer .right {
+        gap: 25px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    footer li {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    
+    footer h4 {
+        margin: 6px 0;
+    }
+    
+    .contact {
+        height: max-content;
+        margin-left: 0;
+    }
+    
+    .contact img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .socmed {
+        margin: 0 ;
+        margin-bottom: 10px;
+    }
+    
+    .socmed img {
+        margin-right: 5px;
+        width: 22px;        
+        height: 22px;
+    }
+    
+    footer .loc {
+        margin-top: 10px;
+    }
+    
+    footer .loc img {
+        height: 14px;
+    }
+    
+    footer small {
+        font-size: 10px;
+    }
+}

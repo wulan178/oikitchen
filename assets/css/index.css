@@ -202,6 +202,8 @@ nav li:hover .active {
 .decore img {
     position: absolute; 
     z-index: -1;
+    width: 50px;
+    height: 50px;
     animation-name: rotate;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -217,6 +219,23 @@ nav li:hover .active {
     100% {
         transform: rotate(10deg);
     }
+}
+
+.decore .decore1 {
+   right: 90px; 
+   top: 190px;
+}
+
+.decore .decore2 {
+    right: 45px; 
+    top: 330px; 
+    transform: rotate(-15deg);
+}
+
+.decore .decore3 {
+    right: 140px; 
+    top: 480px; 
+    transform: rotate(6deg);
 }
 
 
@@ -279,6 +298,10 @@ nav li:hover .active {
     background-color: rgba(243, 243, 243, 0.932);
     padding: 10px;
     border-radius: 24px 0 24px 24px;
+}
+
+.listAdvItem {
+    width: 80%;
 }
 
 .listAdvItem h4 {
@@ -504,12 +527,6 @@ nav li:hover .active {
     border-radius: 5px;
 }
 
-.bannerRight img {
-    width: 20px;
-    height: 20px;
-    margin-top: auto;
-}
-
 
 /* ///////////////////////////////////////////// */
 /* Footer */
@@ -600,4 +617,408 @@ footer small {
     color:  white;
     margin-left: 5px;
     font-weight: lighter;
+}
+
+
+
+/* ///////////////////////////////// */
+/* RESPONSIVE */
+/* //////////////////////////////// */
+
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+    
+    nav {
+        width: 100vw;
+        height: 50px;
+    }
+    
+    nav .brand {
+        display: none;
+    }
+    
+    nav ul {
+        margin-left: 12px;
+        font-size: 12px;
+        padding-left: 0;
+        margin-right: auto;
+        width: max-content;
+    }
+
+    nav ul li {
+        margin-right: 12px;
+    }
+    
+    .btnLogout {
+        font-size: 12px;
+        padding: 5px 12px;
+        margin-right: 12px;
+    }
+    
+    
+    /* //////////////////////////////////////////// */
+    /* Hero */
+    /* /////////////////////////////////////////// */
+    
+    .hero {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    
+    .heroImg {
+        display: none;
+    }
+
+    .textHero {
+        width: 90%;
+        margin-top: 0;
+        margin-left: 15px;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    
+    .textHero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .textHero h6 {
+        font-size: 14px;
+        line-height: 22px;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .searchBox {
+        width: 70%;
+        height: 30px;
+    }
+    
+    .searchBox input {
+        padding: 6px;
+    }
+    
+    .btnSearch {
+        height: 26px;
+        width: 15%;
+    }
+
+    .btnSearch img {
+        transform: scale(0.8);
+    }
+
+    .decore img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .decore .decore1 {
+        right: 40px; 
+        top: 120px;
+    }
+     
+    .decore .decore2 {
+        right: 20px; 
+        top: 200px; 
+    }
+     
+    .decore .decore3 {
+        right: 60px; 
+        top: 280px; 
+    }
+    
+    
+    /* /////////////////////////////////////////// */
+    /* Why should OiKitchen? */
+    /* /////////////////////////////////////////// */
+    
+    #advantages {
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    
+    #advantages h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .advContent {
+        width: 100%;
+        margin-left: 15px;
+    }
+    
+    .advImg {
+        display: none;
+    }
+    
+    .listAdv {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    
+    .listAdv img {
+        margin-right: 20px;
+        width: 20%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .listAdvItem {
+        width: 75%;
+    }
+    
+    .listAdvItem h4 {
+        padding-right: 10px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .listAdvItem p {
+        font-size: 12px;
+    }
+
+
+    
+    /* ////////////////////////////////////////// */
+    /* How to order */
+    /* ////////////////////////////////////////// */
+    
+    #order {
+       margin-top: 20px;
+       margin-bottom: 30px;
+    }
+    
+    #order h2 {
+        font-size: 24px;    
+        margin-bottom: 20px;
+    }
+    
+    .order {
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .order h3 {
+        font-size: 12px;
+    }
+    
+    .orderItem img {
+        height: 160px;
+        width: 160px;
+        background-color: var(--borderline);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .orderArrow {
+        width: 30px;
+        height: 24px;
+        margin-bottom: 10px;
+    }
+    
+    @keyframes arrow {
+        0% {
+            transform: scale(1) rotate(90deg);
+        }
+    
+        25% {
+            transform: scale(1.3) rotate(90deg);
+            background-color: var(--darker);
+        }
+    
+        50% {
+            transform: scale(1) rotate(90deg);
+            background-color: var(--primary);
+        }
+    
+        75% {
+            transform: scale(1.3) rotate(90deg);
+            background-color: var(--darker);
+        }
+    
+        100% {
+            transform: scale(1) rotate(90deg);
+        }
+    }
+    
+    
+    /* ///////////////////////////////////////////// */
+    /* Menu Categories */
+    /* //////////////////////////////////////////// */
+    
+    #categories {
+        margin: 0 15px 15px 15px;
+    }
+    
+    #categories h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    #categories .flex {
+        gap: 20px;
+    }
+    
+    .categoriesCard {
+        width: 85%;
+        height: 300px;
+        overflow-y: hidden;
+        padding: 2%;
+    }
+    
+    .categoriesCard .cover {
+        height: 50%;
+    }
+    
+    .categoriesCard .cover img {
+        width: auto;
+        margin-top: 5px;
+    }
+    
+    .categoriesCard h3 {
+        font-size: 16px;
+    }
+    
+    .categoriesCard h5 {
+        font-size: 12px;
+    }
+    
+    .categoriesCard a button, #banner a button {
+        font-size: 12px;
+        padding: 12px 22px;
+        width: max-content;
+    }
+    
+    
+    /* //////////////////////////////////////// */
+    /* Banner */
+    /* /////////////////////////////////////// */
+    
+    #banner {
+        margin: 70px 0;
+    }
+    
+    .bannerLeft img {
+        height: 120px;
+        width: 120px;
+        border-radius: 20%;
+    }
+    
+    .bannerLeft {
+        width: 30%;
+    }
+    
+    .bannerLeft h2 {
+        font-size: 14px;
+    }
+    
+    .discount {
+        font-size: 12px;
+    }
+    
+    .bannerRight {
+        width: 70%;
+        background-color: var(--borderline);
+        padding: 15px;
+        border-radius: 0;
+    }
+
+    .bannerRight h1 {
+        font-size: 20px;
+    }
+
+    .bannerRight p, .bannerRight {
+        font-size: 12px;
+    }
+    
+    .bannerRight h2 {
+        font-size: 18px;
+    }
+    
+    
+    /* ///////////////////////////////////////////// */
+    /* Footer */
+    /* //////////////////////////////////////////// */
+    
+    footer {
+        padding: 15px 20px;
+    }
+
+    footer .flex {
+        flex-wrap: wrap;
+    }
+    
+    footer .brand {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    
+    footer .brand img {
+        display: none;
+    }
+
+    footer .left p {
+        font-size: 12px;
+    }
+
+    footer .left img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    footer .right {
+        gap: 25px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    footer li {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    
+    footer h4 {
+        margin: 6px 0;
+    }
+    
+    .contact {
+        height: max-content;
+        margin-left: 0;
+    }
+    
+    .contact img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .socmed {
+        margin: 0 ;
+        margin-bottom: 10px;
+    }
+    
+    .socmed img {
+        margin-right: 5px;
+        width: 22px;        
+        height: 22px;
+    }
+    
+    footer .loc {
+        margin-top: 10px;
+    }
+    
+    footer .loc img {
+        height: 14px;
+    }
+    
+    footer small {
+        font-size: 10px;
+    }
 }

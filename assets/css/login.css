@@ -182,3 +182,89 @@ input:focus {
 .login small a {
     font-weight: bold;
 }
+
+
+
+/* ////////////////////////////////////////// */
+/* RESPONSIVE */
+/* ///////////////////////////////////////// */
+
+@media screen and (max-width: 320px) {
+
+    .login {
+        flex-wrap: wrap;
+        padding-left: auto;
+    }
+    
+    .loginImg {
+        display: none;
+        width: 0;
+    }
+
+    .loginForm {
+        width: 100%;
+        padding: 5%;
+    }
+    
+    .loginForm h1 {
+        font-size: 24px;
+    }
+    
+    .loginForm p {
+        font-size: 12px;
+    }
+    
+    .autoLogin {
+        flex-wrap: wrap;
+    }
+    
+    .btnAutoLogin {
+        width: 90%;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .btnAutoLogin img {
+        transform: scale(0.8);
+    }
+    
+    .login legend {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 12px;
+    }
+    
+    .login form {
+        margin-top: 5px;
+    }
+    
+    .formInput {
+        width: 90%;
+        font-size: 12px;
+        height: 35px;
+        overflow-y: hidden; 
+    }
+    
+    .formInput img {
+        transform: scale(0.8);
+    }
+    
+    .formInput input {
+        width: 100%;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+    
+    .btnLogin button {
+        font-size: 12px;
+        padding: 10px 20px;
+        width: 40%;
+    }
+
+    .loginLink {
+        font-size: 12px;
+    }
+   
+}

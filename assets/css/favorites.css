@@ -337,3 +337,207 @@ footer small {
     right: 0; 
     z-index: 1;
 }
+
+/* ///////////////////////// */
+/* RESPONSIVE */
+/* ///////////////////////// */
+
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+    
+    nav {
+        width: 100vw;
+        height: 50px;
+    }
+    
+    nav .brand {
+        display: none;
+    }
+    
+    nav ul {
+        margin-left: 12px;
+        font-size: 12px;
+        padding-left: 0;
+        margin-right: auto;
+        width: max-content;
+    }
+
+    nav ul li {
+        margin-right: 12px;
+    }
+    
+    .btnLogout {
+        font-size: 12px;
+        padding: 5px 12px;
+        margin-right: 12px;
+    }
+   
+    .searchBox {
+        width: 70%;
+        height: 30px;
+        margin-top: 70px;
+    }
+    
+    .searchBox input {
+        padding: 6px;
+    }
+    
+    .btnSearch {
+        height: 26px;
+        width: 15%;
+    }
+
+    .btnSearch img {
+        transform: scale(0.8);
+    }
+
+    .menu {
+        margin: 0 15px 15px 15px;
+        margin-bottom: 50px;
+    }
+    
+    #popularMenus {
+        margin-top: 20px;
+        margin-bottom: 0;
+        width: 90%;
+    }
+    
+    #favMenus {
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    
+    #popularMenus h2, #favMenus h2 {
+        font-size: 24px;
+        margin: 50px auto 10px auto;
+    }
+    
+    .menuCard {
+        width: 80%;
+        height: 320px;
+        margin: 20px;
+    }
+    
+    .menuImgColor {
+        width: 55%;
+        height: 100%;
+    }
+    
+    .menuImg img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .menuDesc h3 {
+        font-size: 18px;
+    }
+
+    .menuDesc img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .menuDesc .rate img {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+    }
+    
+    .menuDesc #price {
+        font-size: 16px;
+    }
+    
+    #dessert .menuImgColor {
+        width: 55%;
+    }
+    
+    .discount {
+        font-size: 16px;
+    }
+
+
+    /* ///////////////////////////////////////////// */
+    /* Footer */
+    /* //////////////////////////////////////////// */
+    
+    footer {
+        padding: 15px 20px;
+    }
+
+    footer .flex {
+        flex-wrap: wrap;
+    }
+    
+    footer .brand {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    
+    footer .brand img {
+        display: none;
+    }
+
+    footer .left p {
+        font-size: 12px;
+    }
+
+    footer .left img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    footer .right {
+        gap: 25px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    footer li {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    
+    footer h4 {
+        margin: 6px 0;
+    }
+    
+    .contact {
+        height: max-content;
+        margin-left: 0;
+    }
+    
+    .contact img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .socmed {
+        margin: 0 ;
+        margin-bottom: 10px;
+    }
+    
+    .socmed img {
+        margin-right: 5px;
+        width: 22px;        
+        height: 22px;
+    }
+    
+    footer .loc {
+        margin-top: 10px;
+    }
+    
+    footer .loc img {
+        height: 14px;
+    }
+    
+    footer small {
+        font-size: 10px;
+    }
+}
