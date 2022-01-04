@@ -583,11 +583,12 @@ footer small {
     .feedback {
         height: max-content;
         margin: 20px;
-        width: 90%;
+        width: 100%;
     }
     
     .feedback form {
         margin-left: 0;
+        width: 100%;
     }
     
     .feedback img {
@@ -596,14 +597,14 @@ footer small {
     
     .feedback button {
         width: 40%;
-        left: 0;
+        left: 29%;
         padding: 8px;
         font-size: 12px;
     }
 
     .feedback textarea {
         height: 100px;
-        width: 210px; 
+        width: 82%; 
     }
 
     footer {
