@@ -189,7 +189,7 @@ input:focus {
 /* RESPONSIVE */
 /* ///////////////////////////////////////// */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1080px) {
 
     .login {
         flex-wrap: wrap;
