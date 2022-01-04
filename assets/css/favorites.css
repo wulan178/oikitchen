@@ -342,7 +342,7 @@ footer small {
 /* RESPONSIVE */
 /* ///////////////////////// */
 
-@media screen and (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 600px){
     .container {
         margin-left: 25px;
         margin-right: 25px;
