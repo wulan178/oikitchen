@@ -405,8 +405,8 @@ footer small {
    
     .searchBox {
         width: 70%;
-        height: 30px;
         margin-top: 70px;
+        overflow-y: hidden;
     }
     
     .searchBox input {

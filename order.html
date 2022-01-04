@@ -9,7 +9,7 @@
     <title>OiKitchen</title>
 </head>
 <body>
-    <fieldset class="center">
+    <div class="orderCard">
         <legend>
             <h1>Buat Pesanan</h1>
         </legend>
@@ -75,10 +75,9 @@
                 </div>
             </div>
         </section>
-        <center>
+        
             <h6>TOTAL HARGA</h6>
             <h5><b>Rp 18.000,-</b></h5>
-        </center>
 
         <!-- Address -->
         <h2>Detail Pesanan</h2>
@@ -133,7 +132,7 @@
                 <div class="flex">
                     <p>Metode Pembayaran</p>
                     <span>:</span>
-                    <div class="flex">
+                    <div class="flex inputRadio">
                         <input type="radio" name="payment" id="dana">
                             <label for="dana">DANA</label>
                         <input type="radio" name="payment" id="ovo">
@@ -154,13 +153,11 @@
                     </div>
                 </div>
 
-                <center>
-                    <button type="submit" class="btnOrder">BUAT PESANAN</button>
-                </center>
+                <button type="submit" class="btnOrder">BUAT PESANAN</button>
             </form>
         </section>
 
 
-    </fieldset>
+    </div>
 </body>
 </html>
