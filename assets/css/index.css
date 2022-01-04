@@ -182,6 +182,7 @@ nav li:hover .active {
     border-radius: 25px;
     padding: 0;
     border: 2px solid var(--darker);
+    overflow-y: hidden;
 }
 
 .searchBox input {
@@ -913,13 +914,14 @@ footer small {
     }
     
     .bannerLeft img {
-        height: 120px;
-        width: 120px;
-        border-radius: 20%;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
     }
     
     .bannerLeft {
         width: 30%;
+        padding: 0;
     }
     
     .bannerLeft h2 {
