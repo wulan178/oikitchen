@@ -370,7 +370,7 @@ textarea {
 
     form input {
         margin: 6px 10px;
-        width: 65vw;
+        width: 70vw;
         padding: 6px 12px;
     }
 
@@ -386,7 +386,7 @@ textarea {
         padding: 8px;
         border-radius: 5px;
         height: auto;
-        width: 60vw; 
+        width: 55vw; 
         margin-left: 10px;
     }
 
