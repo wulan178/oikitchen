@@ -309,7 +309,7 @@ textarea {
     }
 
     .menuCard {
-        width: max-content;
+        width: 75vw;
         height: 320px;
         margin: 20px;
     }
