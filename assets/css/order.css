@@ -61,6 +61,7 @@ input {
 .center {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .container {
@@ -73,12 +74,12 @@ input {
 /* Order page style */
 /* //////////////////////////////// */
 
-.orderCard {
-    border: 2px solid var(--secondary);
-    border-radius: 10px;
-    padding: 20px;
+.order {
+    border: 3px solid var(--secondary);
+    border-radius: 30px;
+    padding: 1% 3%;
     width: 80%;
-    margin: 20px 20px;
+    margin: 20px auto;
 }
 
 legend {
@@ -86,13 +87,13 @@ legend {
     padding: 10px;
 }
 
-.orderCard h1 {
+.order h1 {
     font-size: 28px;
     color: var(--darker);
     margin: 0;
 }
 
-.orderCard h2 {
+.order h2 {
     margin: 0;
     font-size: 20px;
     margin: 20px 0;
@@ -104,13 +105,17 @@ legend {
 
 h6 {
     font-size: 20px;
-    margin: 10px 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 h5 {
     font-size: 26px;
-    border: 1px solid var(--darker);
-    margin: 0;
+    border: 2px solid var(--darker);
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 20px;
     width: fit-content;
     color: var(--primary);
@@ -208,8 +213,9 @@ form {
 }
 
 form p {
-    margin: 5px;
-    width: 175px;
+    /* margin: 5px; */
+    max-width: 20%;
+    width: 20%;
 }
 
 form p span {
@@ -219,25 +225,29 @@ form p span {
 form input {
     border: 1px solid var(--borderline);
     margin: auto 15px 8px; 
-    width: 500px;
-    padding: 8px 20px;
+    width: 80%;
+    padding: 10px 20px;
     border-radius: 5px;
+}
+
+.inputRadio {
+    width: 86%;
 }
 
 input[type="radio"] {
     width: fit-content;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .btnOrder {
     background-color: var(--darker);
     color: white;
-    padding: 10px 20px;
+    padding: 15px;
     width: 30%;
     border-radius: 5px;
     margin-top: 30px;
     font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 textarea:focus {
@@ -253,7 +263,7 @@ textarea {
     border-radius: 10px;
     height: 150px;
     resize: none;
-    width: 500px; 
+    width: 64vw; 
 }
 
 
@@ -269,7 +279,7 @@ textarea {
         padding: 15px;
     }
     
-    .orderCard {
+    .order {
         padding: 0;
         width: 100%;
         border: none;
@@ -278,13 +288,13 @@ textarea {
         flex-direction: column;
     }
     
-    .orderCard h1 {
+    .order h1 {
         font-size: 24px;    
         margin: 0;
         text-align: center;
     }
     
-    .orderCard h2 {
+    .order h2 {
         font-size: 16px;
         margin: 10px 0 10px 0;
         text-align: center;
@@ -377,7 +387,6 @@ textarea {
     .btnOrder {
         padding: 8px 15px;
         width: 50%;
-        display: flex;
         justify-content: center;
         font-size: 12px;
         margin-bottom: 30px;
@@ -400,8 +409,6 @@ textarea {
 
     input[type="radio"] {
         width: 10px;
-        margin-bottom: auto;
-        margin-top: auto;
         margin-right: 5px;
     }
 
