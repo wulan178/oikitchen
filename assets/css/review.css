@@ -227,11 +227,10 @@ footer small {
 
 #feedback {
     margin-top: 85px;
-    margin-bottom: 100px;
+    margin-bottom: 5vh;
 }
 
 #review {
-    margin-top: 2vh;
     margin-bottom: 100px;
 }
 
