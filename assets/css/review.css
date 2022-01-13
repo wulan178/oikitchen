@@ -225,13 +225,13 @@ footer small {
 /* Review page style */
 /* /////////////////////////// */
 
-#review {
+#feedback {
     margin-top: 85px;
     margin-bottom: 100px;
 }
 
-#feedback {
-    margin-top: 5vh;
+#review {
+    margin-top: 5px;
     margin-bottom: 100px;
 }
 
